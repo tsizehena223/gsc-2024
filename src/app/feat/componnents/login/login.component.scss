@@ -128,7 +128,7 @@ body{
                     text-align: center;
                     color: $color-accentiation;
                     position: relative;
-                    font-size: 3rem !important;
+                    font-size: 3rem;
                     font-weight: bold;
                     margin-left: 1rem;
                     text-shadow: 0 .1rem .1rem #fafafa6d;
@@ -140,4 +140,43 @@ body{
     background-color: $color-accentiation !important;
     color: white !important;
     font-weight: bold;
+}
+
+@media all and (max-width:1023px) {
+    .content2{
+        mat-card-title{
+            h2{
+                font-size: 2rem !important;
+            }
+        }
+    }
+    .input_container{
+        width: 80% !important;
+        height: 40vh !important;
+             mat-card-title{
+                 height: 8vh;
+                 width: 100% !important;
+                 h1{
+                 margin-left: 2rem !important;
+                 }
+             }
+            .fb{
+             .title_fb{
+                 color: white;
+                 margin-left: .5rem;
+                 text-align: center;
+                 font-weight: 500;
+             }
+             .logo_fb{
+                 display: flex;
+                 align-items: center;
+                 justify-content: flex-start;
+                 svg{
+                     fill:white;
+                     width: 20px;
+                     height: 20px;
+                 }
+             }
+            }
+         }
 }
