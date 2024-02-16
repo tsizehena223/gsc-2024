@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FeatRoutingModule } from './feat-routing.module';
-import { LoginComponent } from './componnents/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './componnents/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { environement } from 'src/environements/environement';
 
