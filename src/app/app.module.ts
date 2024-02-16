@@ -5,17 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+
+// Firebase
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environement } from 'src/environements/environement';
+import { UniversityService } from './services/university.service';
+import { UniversityComponent } from './feat/components/university/university.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UniversityComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    provideFirebaseApp(() => initializeApp(environement.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
-  providers: [],
+  providers: [UniversityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
