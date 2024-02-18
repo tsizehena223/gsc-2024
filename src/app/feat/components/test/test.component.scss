@@ -10,9 +10,12 @@ $color-accentiation: #225B7C;
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: $color-primary;
     mat-tab-group{
         margin-top: .5rem;
         width: 100% !important;
+        height: 100%;
+        // background-color: $color-secondary;
     }
     .nav_barre{
         margin-top: .5rem;
@@ -24,6 +27,7 @@ $color-accentiation: #225B7C;
         top: 0;
         border: 4px solid $color-primary;
         border-radius: 2rem;
+        background-color: white;
         .home, .test{
             span{
                 font-size: 1.5rem;
@@ -36,10 +40,14 @@ $color-accentiation: #225B7C;
 }
 .title{
     font-size: 1.2rem !important;
+    color: white;
 }
 .test1{
-    height: 80vh;
-    width: 100%;
+    height: 70vh;
+    width: 70%;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,10 +59,14 @@ $color-accentiation: #225B7C;
         justify-content: center;
         span{
             font-size: 1.5rem;
-            color: $color-primary;
+            color: $color-secondary;
             text-align: center;
             font-weight: bold;
             letter-spacing: 2px;
         }
     }
+}
+mat-tab-label{
+    width: 25%;
+    background-color: red;
 }
