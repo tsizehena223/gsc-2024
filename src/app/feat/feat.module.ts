@@ -6,9 +6,11 @@ import { SharedModule } from '../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { environement } from 'src/environements/environement';
+import { TestComponent } from './components/test/test.component';
 @NgModule({
   declarations: [
     LoginComponent,
+    TestComponent,
   ],
   imports: [
     CommonModule,
