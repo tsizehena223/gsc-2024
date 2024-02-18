@@ -1,30 +1,41 @@
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.scss']
 })
-export class TestComponent {
+export class TestComponent implements AfterViewInit{
+  @ViewChild('element') element!: ElementRef
+  @ViewChild('listquality') listquality!: ElementRef
+  @ViewChild('myquality') myquality!: ElementRef
 
-  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+constructor(
+  private renderer: Renderer2
+  ){}
 
-  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
-  doneList: any;
-  trackByFn(index: number, item: any): any {
-    return item.id; // Remplacez item.id par la propriété unique de votre objet
+  selecteQuality(): void{
+    this.listquality.nativeElement.querySelectorAll('.li').forEach((container_quality: any) =>{
+      container_quality.querySelectorAll('.elt').forEach((quality: any) =>{
+      quality.addEventListener('click', () => {
+      const text = quality.innerHTML
+      this.registerQuality(text)
+      this.renderer.removeChild(container_quality, quality)
+      })
+      })
+    })
+   
   }
-  drop(event: CdkDragDrop<string[]>) {
-    if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    } else {
-      transferArrayItem(
-        event.previousContainer.data,
-        event.container.data,
-        event.previousIndex,
-        event.currentIndex,
-      );
-    }
+
+  registerQuality(quality: string): void{
+   const newQuality = this.renderer.createElement('span');
+   const text = this.renderer.createText(`${quality}`);
+   this.renderer.appendChild(newQuality, text);
+   this.renderer.addClass(newQuality, 'my_qualityClass');
+   this.renderer.appendChild(this.myquality.nativeElement, newQuality)
+
+  }
+  ngAfterViewInit(): void {
+    this.selecteQuality()
   }
 }
