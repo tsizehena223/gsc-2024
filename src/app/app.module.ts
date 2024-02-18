@@ -11,13 +11,11 @@ import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { environement } from 'src/environements/environement';
 import { UniversityService } from './services/university.service';
-import { UniversityComponent } from './feat/components/university/university.component';
-import { AccueilComponent } from './feat/components/accueil/accueil.component';
+import { AccueilComponent } from './core/components/accueil/accueil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UniversityComponent,
     AccueilComponent
   ],
   imports: [

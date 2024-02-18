@@ -4,14 +4,14 @@ import { FeatRoutingModule } from './feat-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './components/home/home.component';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { environement } from 'src/environements/environement';
+import { UniversityComponent } from './components/university/university.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
-    HomeComponent
+    UniversityComponent
   ],
   imports: [
     CommonModule,
