@@ -7,13 +7,33 @@
     <mat-tab>
         <ng-template mat-tab-label>
           <mat-card-title class="title_card">
-            <span class="title">First</span>
+            <span class="title">First Test</span>
           </mat-card-title>
         </ng-template>
         <div class="test1">
-            <mat-card-title>
-                <span>Metier qui vous passione</span>
-            </mat-card-title>
+            <div class="quality_list">
+                <mat-card-title> Quality list</mat-card-title>
+                <div class="content" #listquality>
+                    <mat-card class="li">
+                        <mat-card class="elt"> Curieux  </mat-card>
+                        <mat-card class="elt"> Organise </mat-card>
+                        <mat-card class="elt"> Sociable </mat-card>
+                        <mat-card class="elt"> Flexible </mat-card>
+                        <mat-card class="elt"> Courageux </mat-card>
+                    </mat-card>
+                    <mat-card class="li">
+                        <mat-card class="elt"> Curieux  </mat-card>
+                        <mat-card class="elt"> Organise </mat-card>
+                        <mat-card class="elt"> Sociable </mat-card>
+                        <mat-card class="elt"> Flexible </mat-card>
+                        <mat-card class="elt"> Courageux </mat-card>
+                    </mat-card>
+                </div>
+            </div>
+            <span class="barre"></span>
+            <div class="my_quality" #myquality>
+                <mat-card-title>My Quality</mat-card-title>
+            </div>
         </div>
     </mat-tab>
 
@@ -21,7 +41,7 @@
 
        <mat-tab>
         <ng-template mat-tab-label  class="title">
-            <span class="title">Second</span>
+            <span class="title">Second Test</span>
         </ng-template>
         <div class="test1">
             <mat-card-title>
@@ -32,7 +52,7 @@
       
       <mat-tab>
         <ng-template mat-tab-label class="title">
-            <span class="title">Third</span>
+            <span class="title">Third Test</span>
         </ng-template>
         <div class="test1">
             <mat-card-title>
