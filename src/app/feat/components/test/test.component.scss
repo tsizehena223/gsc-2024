@@ -45,7 +45,7 @@ $color-accentiation: #225B7C;
 }
 .test1{
     height: 70vh;
-    width: 70%;
+    width: 80%;
     margin: 2rem auto;
     border-radius: 2rem;
     background-color: white;
@@ -81,22 +81,26 @@ $color-accentiation: #225B7C;
             justify-content: space-around;
             flex-direction: column;
         }
-        mat-card{
+        .li{
             width: 50%;
             height: 45%;
             display: flex;
             align-items: center;
             justify-content: space-around;
             flex-direction: column;
-            padding: .5rem;
-            border-radius: 2rem;
+            padding: .8rem;
+            border-radius: .2rem;
             mat-card{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 90%;
                 height: 4vh;
                 margin-top: .5rem;
                 background-color: $color-secondary;
                 color: #272727;
                 font-weight: bold;
+                border-radius: .2rem;
                 letter-spacing: .2rem;
                 cursor: pointer;
             }
@@ -121,7 +125,7 @@ $color-accentiation: #225B7C;
     width: 50%;
     height: 4vh;
     background-color: $color-secondary;
-    border-radius: 2rem;
+    border-radius: .2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,12 +134,20 @@ $color-accentiation: #225B7C;
     letter-spacing: .2rem;
     cursor: pointer;
     animation: text 400ms ease-in-out ;
+    transition: 200ms ease-in-out;
+    &:hover{
+        background-color: red;
+        color: white;
+    }
 }
 @keyframes text {
     from{
-        transform: translateX(-100px);
+        transform: translateX(-400px);
+        opacity: 0;
+        background-color: $color-accentiation;
     }
     to{
         transform: translateX(0);
+        opacity: 1;
     }
 }
