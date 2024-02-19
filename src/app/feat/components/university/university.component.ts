@@ -19,7 +19,11 @@ export class UniversityComponent {
     })
   }
 
+  Univ() {
+    this.universities = ["ISPM", "ESTI"];
+  }
+
   ngOnInit() {
-    this.refreshUniversities();
+    this.Univ();
   }
 }
