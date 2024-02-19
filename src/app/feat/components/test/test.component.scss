@@ -52,7 +52,7 @@ $color-accentiation: #225B7C;
 .test1{
     height: 80vh;
     width: 90%;
-    margin: 3rem auto;
+    margin: 2rem auto;
     border-radius: 2rem;
     background-color: white;
     display: flex;
@@ -83,12 +83,18 @@ $color-accentiation: #225B7C;
             width: 100%;
             height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-direction: column;
+            .content_list{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+           
         }
         .li{
-            width: 50%;
+            width: 90%;
             height: 45%;
             display: flex;
             align-items: center;
@@ -148,7 +154,7 @@ $color-accentiation: #225B7C;
     animation: text 400ms ease-in-out ;
     transition: 200ms ease-in-out;
     &:hover{
-        background-color: red;
+        background-color: yellow;
         color: white;
         transform: scale(1.05);
     }
@@ -163,4 +169,41 @@ $color-accentiation: #225B7C;
         transform: translateX(0);
         opacity: 1;
     }
+}
+.alert{
+    position: absolute;
+    width: 10%;
+    margin: 0 auto;
+    height: 15vh;
+    text-align: center;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: yellow;
+    padding: 1rem;
+    animation: alert 500ms ease-in-out;
+    box-shadow: 0 0 .8rem $color-accentiation;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+svg{
+    width: 40px;
+    height: 40px;
+    fill: red !important;
+    transition-duration: 200ms;
+}
+@keyframes alert {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.btn_disable{
+    pointer-events: none;
 }
