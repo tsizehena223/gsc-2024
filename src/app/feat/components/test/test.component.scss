@@ -154,7 +154,6 @@ $color-accentiation: #225B7C;
     animation: text 400ms ease-in-out ;
     transition: 200ms ease-in-out;
     &:hover{
-        background-color: yellow;
         color: white;
         transform: scale(1.05);
     }
