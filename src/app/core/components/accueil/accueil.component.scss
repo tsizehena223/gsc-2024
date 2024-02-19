@@ -50,22 +50,13 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-// .anim1, .anim2{
-//     border-radius: 100%;
-//     z-index: -1;
-//     width: 150px !important;
-//     height: 150px !important;
-//     background-color: $color-secondary;
-//     border: none;
-// }
-
 
 mat-card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
     border-radius: 2rem;
-    cursor: pointer;
     background-image: url('https://media.istockphoto.com/id/1131841061/fr/photo/la-femme-a-confondu-pensant-point-dinterrogation-ic%C3%B4ne-sur-le-sac-en-papier-copiez-lespace.webp?b=1&s=170667a&w=0&k=20&c=z4oxq-ryUdRquNWADJ870_p1GouxoTyuO3_Ar6312EA=');
     background-position: center;
     background-repeat: no-repeat;
