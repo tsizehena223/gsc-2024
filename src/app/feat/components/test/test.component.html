@@ -1,9 +1,5 @@
 <div class="ngcontent">
    <nav class="nav_barre">
-    <!-- <div class="content_nav">
-        <div class="home"><span routerLink="/">GSC-2024</span></div>
-        <div class="test"><span>Test</span></div>
-    </div> -->
    </nav> 
    <mat-tab-group fitInkBarToContent>
     <mat-tab>
@@ -12,24 +8,47 @@
             <span class="title">First Test</span>
           </mat-card-title>
         </ng-template>
-        <div class="test1">
+        <div class="test1" #test>
+
             <div class="quality_list">
                 <mat-card-title> Quality list</mat-card-title>
-                <div class="content" #listquality>
-                    <mat-card class="li">
-                        <mat-card class="elt"> Curieux  </mat-card>
-                        <mat-card class="elt"> Organise </mat-card>
-                        <mat-card class="elt"> Sociable </mat-card>
-                        <mat-card class="elt"> Flexible </mat-card>
-                        <mat-card class="elt"> Courageux </mat-card>
-                    </mat-card>
-                    <mat-card class="li">
-                        <mat-card class="elt"> Curieux  </mat-card>
-                        <mat-card class="elt"> Organise </mat-card>
-                        <mat-card class="elt"> Sociable </mat-card>
-                        <mat-card class="elt"> Flexible </mat-card>
-                        <mat-card class="elt"> Courageux </mat-card>
-                    </mat-card>
+                <div class="content">
+                    <div class="content_list" #listquality>
+                        <mat-card class="li" id="First">
+                            <mat-card class="elt"> Photographier  </mat-card>
+                            <mat-card class="elt"> Trouver </mat-card>
+                            <mat-card class="elt"> Bâtir </mat-card>
+                            <mat-card class="elt"> Aider </mat-card>
+                            <mat-card class="elt"> Planifier </mat-card>
+                            <mat-card class="elt"> Persuader </mat-card>
+                        </mat-card>
+                        <mat-card class="li" id="Second">
+                            <mat-card class="elt"> Créer  </mat-card>
+                            <mat-card class="elt"> Expliquer </mat-card>
+                            <mat-card class="elt"> Fabriquer </mat-card>
+                            <mat-card class="elt"> Renseigner </mat-card>
+                            <mat-card class="elt"> Financer </mat-card>
+                            <mat-card class="elt"> Marchander </mat-card>
+                        </mat-card>
+                    </div>
+                    <div class="content_list" #listquality2>
+                        <mat-card class="li" id="Third">
+                            <mat-card class="elt"> illustrer  </mat-card>
+                            <mat-card class="elt"> Chercher </mat-card>
+                            <mat-card class="elt"> Améliorer </mat-card>
+                            <mat-card class="elt"> Conseiller </mat-card>
+                            <mat-card class="elt"> Calculer </mat-card>
+                            <mat-card class="elt"> Acquérir </mat-card>
+                        </mat-card>
+                        <mat-card class="li" id="Forth">
+                            <mat-card class="elt"> Imaginer  </mat-card>
+                            <mat-card class="elt"> Inventer </mat-card>
+                            <mat-card class="elt"> Construire </mat-card>
+                            <mat-card class="elt"> Eduquer </mat-card>
+                            <mat-card class="elt"> Gérer </mat-card>
+                            <mat-card class="elt"> Vendre </mat-card>
+                        </mat-card>
+                    </div>
                 </div>
             </div>
             <span class="barre"></span>
