@@ -1,6 +1,4 @@
-import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
-
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -23,7 +21,6 @@ export class TestComponent implements AfterViewInit, OnInit{
 
 constructor(
   private renderer: Renderer2,
-  private http: HttpClient
   ){}
  
   test_nombre_quality(container: any, identiant: string, test:any){
