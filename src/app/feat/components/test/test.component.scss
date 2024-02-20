@@ -189,9 +189,9 @@ svg{
 .btn_disable{
     pointer-events: none;
 }
-@media all and (max-width:1500px) {
+@media all and (min-width:1023px) {
     .test1{
-        margin: 6rem auto;
+        margin: 2.5rem auto;
         height: 80vh;
     }
 }
