@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
@@ -21,7 +22,8 @@ export class TestComponent implements AfterViewInit, OnInit{
   @ViewChild('test2') testContainer2!: ElementRef
 
 constructor(
-  private renderer: Renderer2
+  private renderer: Renderer2,
+  private http: HttpClient
   ){}
  
   test_nombre_quality(container: any, identiant: string, test:any){
@@ -43,9 +45,7 @@ constructor(
   
   selecteQuality(container: any,choice:any,error:any): void{
       container.nativeElement.querySelectorAll('.li').forEach((container_quality: any) =>{
-        console.log(container_quality);
       const id = container_quality.id;
-      console.log(id);
       container_quality.querySelectorAll('.elt').forEach((quality: any) =>{
           quality.addEventListener('click', () => {
           this.test_nombre_quality(container, id,error)
@@ -66,6 +66,9 @@ constructor(
    this.renderer.appendChild(newQuality, text);
    this.renderer.addClass(newQuality, 'my_qualityClass');
    this.renderer.appendChild(resultat.nativeElement, newQuality)
+   if(resultat == this.myprofession){
+    // post de resultat
+   }
 
   }
   ngAfterViewInit(): void {
