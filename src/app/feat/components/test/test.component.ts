@@ -63,8 +63,9 @@ constructor(
    this.renderer.appendChild(newQuality, text);
    this.renderer.addClass(newQuality, 'my_qualityClass');
    this.renderer.appendChild(resultat.nativeElement, newQuality)
-   if(resultat == this.myprofession){
-    // post de resultat
+   const test = resultat.nativeElement.querySelectorAll('span')
+   if(resultat == this.myprofession && test.length == 12){
+    console.log('ok');
    }
 
   }
