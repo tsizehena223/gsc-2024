@@ -10,8 +10,8 @@ import { SharedModule } from './shared/shared.module';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { environement } from 'src/environements/environement';
-import { UniversityService } from './services/university.service';
 import { AccueilComponent } from './core/components/accueil/accueil.component';
+import { ActivityService } from './services/activity.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { AccueilComponent } from './core/components/accueil/accueil.component';
     provideFirebaseApp(() => initializeApp(environement.firebase)),
     provideFirestore(() => getFirestore()),
   ],
-  providers: [UniversityService],
+  providers: [ActivityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
