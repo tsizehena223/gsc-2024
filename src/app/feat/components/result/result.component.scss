@@ -12,14 +12,14 @@ $color-accentiation: #225B7C;
     height: 100vh;
     .welcome_title{
         position: absolute;
-        top: 1rem;
+        top: 0;
         background-color: $color-primary;
-        width: 95%;
+        width: 96%;
+        border-radius: 0 0 1rem 1rem;
         height: 8vh;
         justify-content: center;
         display: flex;
         align-items: center;
-        border-radius: 1rem;
         .text_typing{
             width: 60%;
             display: flex;
@@ -60,10 +60,27 @@ $color-accentiation: #225B7C;
             }
         }
         .type_interet{
+            display: inline-block;
             padding-top: 2rem;
             height: 40%;
+            letter-spacing: .5px;
             width: 100%;
-            display: grid;
+            h3{
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            button{
+                width: 20%;
+                height: max-content;
+                font-weight: bold;
+            }
+            a{
+                color: blue;
+                font-size: 1rem;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+            }
         }
     }
     .university_proposition{
