@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { ActivityService } from 'src/app/services/activity.service';
 @Component({
   selector: 'app-test',
@@ -22,7 +23,8 @@ export class TestComponent implements AfterViewInit, OnInit {
 
   constructor(
     private renderer: Renderer2,
-    private service: ActivityService
+    private service: ActivityService,
+    private router: Router
   ) { }
 
   test_nombre_quality(container: any, identiant: string, test: any) {
@@ -67,7 +69,7 @@ export class TestComponent implements AfterViewInit, OnInit {
     this.renderer.appendChild(resultat.nativeElement, newQuality)
     const test = resultat.nativeElement.querySelectorAll('span')
     if (resultat == this.myprofession && test.length == 12) {
-      console.log('ok');
+      this.router.navigateByUrl('/osp/result')
     }
 
   }
