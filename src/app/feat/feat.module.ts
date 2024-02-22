@@ -7,10 +7,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { environement } from 'src/environements/environement';
 import { TestComponent } from './components/test/test.component';
+import { ResultComponent } from './components/result/result.component';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 @NgModule({
   declarations: [
     LoginComponent,
     TestComponent,
+    ResultComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +21,8 @@ import { TestComponent } from './components/test/test.component';
     SharedModule,
     ReactiveFormsModule,
     SocialLoginModule,
-    GoogleSigninButtonModule
+    GoogleSigninButtonModule,
+    NgxTypedJsModule
 
   ],
   providers: [
