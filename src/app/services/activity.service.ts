@@ -42,4 +42,22 @@ export class ActivityService {
     return collectionData(activityCollection, { idField: 'id' });
   }
 
+  getProfessions1() {
+    let activityCollection = collection(this.fs, 'professions1');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getProfessions2() {
+    let activityCollection = collection(this.fs, 'professions2');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getProfessions3() {
+    let activityCollection = collection(this.fs, 'professions3');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getProfessions4() {
+    let activityCollection = collection(this.fs, 'professions4');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+
+
 }
