@@ -1,4 +1,5 @@
-import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { Component} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-result',
@@ -7,7 +8,11 @@ import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 })
 export class ResultComponent {
   constructor(
-    private renderer: Renderer2,
+    private router: Router,
   ){}
+
+  etablissement(){
+    this.router.navigate(['/osp/university'])
+  }
 
   } 

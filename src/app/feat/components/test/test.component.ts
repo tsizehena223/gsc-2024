@@ -74,12 +74,14 @@ export class TestComponent implements AfterViewInit, OnInit {
 
   }
   ngAfterViewInit(): void {
-    this.selecteQuality(this.listquality, this.myquality, this.testContainer)
-    this.selecteQuality(this.listquality2, this.myquality, this.testContainer)
-    this.selecteQuality(this.listquality3, this.myactivity, this.testContainer1)
-    this.selecteQuality(this.listquality4, this.myactivity, this.testContainer1)
-    this.selecteQuality(this.listquality5, this.myprofession, this.testContainer2)
-    this.selecteQuality(this.listquality6, this.myprofession, this.testContainer2)
+      setTimeout(() => {    
+        this.selecteQuality(this.listquality, this.myquality, this.testContainer)
+        this.selecteQuality(this.listquality2, this.myquality, this.testContainer)
+        this.selecteQuality(this.listquality3, this.myactivity, this.testContainer1)
+        this.selecteQuality(this.listquality4, this.myactivity, this.testContainer1)
+        this.selecteQuality(this.listquality5, this.myprofession, this.testContainer2)
+        this.selecteQuality(this.listquality6, this.myprofession, this.testContainer2)
+      }, 4000);
   }
 
   // Firebase
@@ -142,5 +144,6 @@ export class TestComponent implements AfterViewInit, OnInit {
 
   ngOnInit(): void {
     this.refreshActivities();
+    
   }
 }

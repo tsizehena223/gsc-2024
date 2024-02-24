@@ -9,8 +9,7 @@
         </mat-card-title>
       </ng-template>
       <div class="test1" #test>
-
-        <div class="quality_list">
+        <div class="quality_list" >
           <mat-card-title> Activity list</mat-card-title>
           <div class="content">
             <div class="content_list" #listquality>
@@ -21,6 +20,7 @@
                 <mat-card class="elt"> {{ activity3.name | titlecase }} </mat-card>
               </mat-card>
             </div>
+
             <div class="content_list" #listquality2>
               <mat-card class="li" id="Third" *ngFor="let activity2 of activities2">
                 <mat-card class="elt"> {{ activity2.name | titlecase }} </mat-card>
@@ -37,6 +37,26 @@
         </div>
       </div>
     </mat-tab>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <mat-tab>
       <ng-template mat-tab-label class="title">
         <span class="title">Quality</span>
