@@ -88,6 +88,11 @@ export class TestComponent implements AfterViewInit, OnInit {
   activities3: any = [];
   activities4: any = [];
 
+  qualities1: any = [];
+  qualities2: any = [];
+  qualities3: any = [];
+  qualities4: any = [];
+
   refreshActivities() {
     this.service.getActivities1().subscribe((res) => {
       this.activities1 = res;
@@ -101,6 +106,20 @@ export class TestComponent implements AfterViewInit, OnInit {
     this.service.getActivities4().subscribe((res) => {
       this.activities4 = res;
     })
+
+    this.service.getQualities1().subscribe((res) => {
+      this.qualities1 = res;
+    })
+    this.service.getQualities2().subscribe((res) => {
+      this.qualities2 = res;
+    })
+    this.service.getQualities3().subscribe((res) => {
+      this.qualities3 = res;
+    })
+    this.service.getQualities4().subscribe((res) => {
+      this.qualities4 = res;
+    })
+
   }
 
   ngOnInit(): void {

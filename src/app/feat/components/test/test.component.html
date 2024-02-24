@@ -15,22 +15,18 @@
           <div class="content">
             <div class="content_list" #listquality>
               <mat-card class="li" id="First" *ngFor="let activity1 of activities1">
-                <mat-card class="elt"> {{ activity1.name.charAt(0).toUpperCase() + activity1.name.slice(1) }}
-                </mat-card>
+                <mat-card class="elt"> {{ activity1.name | titlecase }} </mat-card>
               </mat-card>
               <mat-card class="li" id="Second" *ngFor="let activity3 of activities3">
-                <mat-card class="elt"> {{ activity3.name.charAt(0).toUpperCase() + activity3.name.slice(1) }}
-                </mat-card>
+                <mat-card class="elt"> {{ activity3.name | titlecase }} </mat-card>
               </mat-card>
             </div>
             <div class="content_list" #listquality2>
               <mat-card class="li" id="Third" *ngFor="let activity2 of activities2">
-                <mat-card class="elt"> {{ activity2.name.charAt(0).toUpperCase() + activity2.name.slice(1) }}
-                </mat-card>
+                <mat-card class="elt"> {{ activity2.name | titlecase }} </mat-card>
               </mat-card>
               <mat-card class="li" id="Forth" *ngFor="let activity4 of activities4">
-                <mat-card class="elt"> {{ activity4.name.charAt(0).toUpperCase() + activity4.name.slice(1) }}
-                </mat-card>
+                <mat-card class="elt"> {{ activity4.name | titlecase }} </mat-card>
               </mat-card>
             </div>
           </div>
@@ -51,39 +47,19 @@
           <mat-card-title> Activity list</mat-card-title>
           <div class="content">
             <div class="content_list" #listquality3>
-              <mat-card class="li" id="First1">
-                <mat-card class="elt"> Photographier </mat-card>
-                <mat-card class="elt"> Trouver </mat-card>
-                <mat-card class="elt"> Bâtir </mat-card>
-                <mat-card class="elt"> Aider </mat-card>
-                <mat-card class="elt"> Planifier </mat-card>
-                <mat-card class="elt"> Persuader </mat-card>
+              <mat-card class="li" id="First1" *ngFor="let quality1 of qualities1">
+                <mat-card class="elt"> {{quality1.name}} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Second1">
-                <mat-card class="elt"> Créer </mat-card>
-                <mat-card class="elt"> Expliquer </mat-card>
-                <mat-card class="elt"> Fabriquer </mat-card>
-                <mat-card class="elt"> Renseigner </mat-card>
-                <mat-card class="elt"> Financer </mat-card>
-                <mat-card class="elt"> Marchander </mat-card>
+              <mat-card class="li" id="Second1" *ngFor="let quality2 of qualities2">
+                <mat-card class="elt"> {{quality2.name}} </mat-card>
               </mat-card>
             </div>
             <div class="content_list" #listquality4>
-              <mat-card class="li" id="Third1">
-                <mat-card class="elt"> illustrer </mat-card>
-                <mat-card class="elt"> Chercher </mat-card>
-                <mat-card class="elt"> Améliorer </mat-card>
-                <mat-card class="elt"> Conseiller </mat-card>
-                <mat-card class="elt"> Calculer </mat-card>
-                <mat-card class="elt"> Acquérir </mat-card>
+              <mat-card class="li" id="Third1" *ngFor="let quality3 of qualities3">
+                <mat-card class="elt"> {{quality3.name}} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Forth1">
-                <mat-card class="elt"> Imaginer </mat-card>
-                <mat-card class="elt"> Inventer </mat-card>
-                <mat-card class="elt"> Construire </mat-card>
-                <mat-card class="elt"> Eduquer </mat-card>
-                <mat-card class="elt"> Gérer </mat-card>
-                <mat-card class="elt"> Vendre </mat-card>
+              <mat-card class="li" id="Forth1" *ngFor="let quality4 of qualities4">
+                <mat-card class="elt"> {{quality4.name}} </mat-card>
               </mat-card>
             </div>
           </div>

@@ -24,4 +24,22 @@ export class ActivityService {
     let activityCollection = collection(this.fs, 'activities4');
     return collectionData(activityCollection, { idField: 'id' });
   }
+
+  getQualities1() {
+    let activityCollection = collection(this.fs, 'qualities1');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getQualities2() {
+    let activityCollection = collection(this.fs, 'qualities2');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getQualities3() {
+    let activityCollection = collection(this.fs, 'qualities3');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getQualities4() {
+    let activityCollection = collection(this.fs, 'qualities4');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+
 }
