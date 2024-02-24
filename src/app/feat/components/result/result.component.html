@@ -1,4 +1,4 @@
-<div class="result">
+<div class="result"  #container_result>
     <div class="welcome_title">
         <ngx-typed-js  class="text_typing" [strings]="[
             'Bienvenue sur le resultat de ton teste',
@@ -15,7 +15,7 @@
                 </div>
                 <span class="type_interet">
                    <h3>You are Realist</h3> You are a person who is oriented towards physical, technical or outdoor professions, in which you can use machines, manipulate objects, tools, demonstrate manual precision, or be in contact with animals. You are a virile person, not very sociable, emotionally stable, materialistic, direct, focused on the present. You attribute value to concrete things or tangible personal characteristics, money, power, status.
-                   <a>Metier correspond à tes personalité ?</a>
+                   <a (click)="profession()">Metier correspond à tes personalité ?</a>
                 </span>
                 <div class="react">
                     <span class="react_title">

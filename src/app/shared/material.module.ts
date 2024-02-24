@@ -14,12 +14,10 @@ import{MatSelectModule} from'@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatMenuModule} from '@angular/material/menu';
-import { CdkDragDrop,moveItemInArray,transferArrayItem,CdkDrag, CdkDropList } from '@angular/cdk/drag-drop';
+
 @NgModule({
 declarations:[],
 imports:[
-    CdkDrag,
-    CdkDropList,
 ],
 exports:[
     CommonModule,
@@ -38,8 +36,6 @@ exports:[
     MatMenuModule,
     MatSlideToggleModule,
     MatTabsModule,
-    CdkDrag,
-    CdkDropList,
 ]
 
 })
