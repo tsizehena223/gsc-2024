@@ -42,7 +42,7 @@ $color-accentiation: #225B7C;
     .kavio_result{
         padding: 2rem ;
         border-radius: 2rem;
-        width: 45%;
+        width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -51,9 +51,12 @@ $color-accentiation: #225B7C;
         box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.2);
         .image{
             width: 100%;
-            height: 40%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img{
-                width: 100%;
+                width: 95%;
                 border-radius: 1rem;
                 height: 100%;
                 object-fit: fill;
@@ -62,7 +65,7 @@ $color-accentiation: #225B7C;
         .type_interet{
             display: inline-block;
             padding-top: 2rem;
-            height: 40%;
+            height: 50%;
             letter-spacing: .5px;
             width: 100%;
             h3{
@@ -72,8 +75,6 @@ $color-accentiation: #225B7C;
             a{
                 color: blue;
                 font-size: 1rem;
-                font-weight: bold;
-                letter-spacing: 1.5px;
                 cursor: pointer;
             }
         }
@@ -104,6 +105,7 @@ $color-accentiation: #225B7C;
             .img_es{
                 width: 30%;
                 height: 100%;
+                padding: 1rem;
                 img{
                     width: 100%;
                     height: 100%;
@@ -111,34 +113,6 @@ $color-accentiation: #225B7C;
             }
             }
         }
-    }
-    
-.react{
-    margin-top: 1rem;
-    border-radius: 1rem;
-    background-color: $color-primary;
-    height: 10%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .react_title{
-        width: max-content;
-        color: white;
-        font-size: 1.4rem;
-    }
-    .like{
-        padding-left: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        width: max-content;
-      svg{
-        width: 26px;
-        height: 26px;
-        fill: rgba(255, 255, 0, 0.781);
-      }
-    }
 }
 @media screen and (max-width: 768px) {
     .result{
@@ -174,16 +148,6 @@ $color-accentiation: #225B7C;
                     font-size: 1rem !important;
                     letter-spacing: normal;
                     font-weight: 100;
-                }
-            }
-            .react{
-                margin-top: 5rem;
-                width: 100%;
-                height: 10%;
-                justify-content: center !important;
-                
-                .react_title{
-                    font-size: 1rem;
                 }
             }
         }
@@ -228,8 +192,23 @@ $color-accentiation: #225B7C;
     }
     
 }
-// .profession > h1{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
+@media screen and (min-width:769px) and (max-width: 1023px) {
+    
+    .kavio_result{
+        .image{
+            height: 35% !important;
+        }
+        .type_interet{
+            height: 65% !important;
+            font-size: 0.8rem !important;
+            a{
+                letter-spacing: normal;
+                font-weight: 100;
+                font-size: .8rem !important;
+            }
+            h3{
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
