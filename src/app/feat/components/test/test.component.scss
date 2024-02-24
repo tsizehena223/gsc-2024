@@ -1,4 +1,4 @@
-$color-primary:#38A7A6; 
+$color-primary:#38A7A6;
 $color-secondary: #59CD97;
 $color-accentiation: #225B7C;
 .ngcontent{
@@ -74,7 +74,7 @@ $color-accentiation: #225B7C;
                 justify-content: space-around;
                 flex-direction: column;
             }
-           
+
         }
         .li{
             width: 90%;
@@ -83,7 +83,7 @@ $color-accentiation: #225B7C;
             align-items: center;
             justify-content: flex-start;
             flex-direction: column;
-            padding: .8rem;
+            padding: 0px;
             border-radius: .2rem;
             mat-card{
                 display: flex;

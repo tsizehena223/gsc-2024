@@ -8,14 +8,20 @@ export class ActivityService {
 
   constructor(private fs: Firestore) { }
 
-  getActivities() {
-    let activityCollection = collection(this.fs, 'activities');
+  getActivities1() {
+    let activityCollection = collection(this.fs, 'activities1');
     return collectionData(activityCollection, { idField: 'id' });
   }
-
-  addActivity(name: string) {
-    let data = { name: name };
-    let activityCollection = collection(this.fs, 'activities');
-    return addDoc(activityCollection, data);
+  getActivities2() {
+    let activityCollection = collection(this.fs, 'activities2');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getActivities3() {
+    let activityCollection = collection(this.fs, 'activities3');
+    return collectionData(activityCollection, { idField: 'id' });
+  }
+  getActivities4() {
+    let activityCollection = collection(this.fs, 'activities4');
+    return collectionData(activityCollection, { idField: 'id' });
   }
 }

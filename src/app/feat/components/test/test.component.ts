@@ -83,18 +83,23 @@ export class TestComponent implements AfterViewInit, OnInit {
   }
 
   // Firebase
-  activities: any = [];
+  activities1: any = [];
+  activities2: any = [];
+  activities3: any = [];
+  activities4: any = [];
 
   refreshActivities() {
-    this.service.getActivities().subscribe((res) => {
-      this.activities = res;
+    this.service.getActivities1().subscribe((res) => {
+      this.activities1 = res;
     })
-  }
-
-  addActivities(activity: string) {
-    this.service.addActivity(activity).then((res) => {
-      console.log(res);
-      this.refreshActivities();
+    this.service.getActivities2().subscribe((res) => {
+      this.activities2 = res;
+    })
+    this.service.getActivities3().subscribe((res) => {
+      this.activities3 = res;
+    })
+    this.service.getActivities4().subscribe((res) => {
+      this.activities4 = res;
     })
   }
 
