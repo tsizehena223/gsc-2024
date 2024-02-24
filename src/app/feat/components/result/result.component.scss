@@ -82,11 +82,6 @@ $color-accentiation: #225B7C;
             font-weight: bold;
             color: white;
         }
-        a{
-            color: blue;
-            font-size: 1rem;
-            cursor: pointer;
-        }
     }
     .realiste{
         color: white;
@@ -105,8 +100,9 @@ $color-accentiation: #225B7C;
             height: 30%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             border-radius: 1rem;
+            padding: 1rem;
             .about{
                 width: 40%;
                 height: 90%;
@@ -182,6 +178,7 @@ $color-accentiation: #225B7C;
 }
 
 .profession{
+    margin-top: 0;
     border-radius: 2rem;
     box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -189,11 +186,11 @@ $color-accentiation: #225B7C;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #2727277c;
+    background-color: #225b7cc8;
     height: 250px;
     width: 250px;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold !important;
     color: white;
     animation: prof 500ms ease-in-out;
