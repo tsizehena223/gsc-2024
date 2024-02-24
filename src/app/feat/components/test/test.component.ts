@@ -29,8 +29,12 @@ export class TestComponent implements AfterViewInit, OnInit {
 
   test_nombre_quality(container: any, identiant: string, test: any) {
     const div = container.nativeElement.querySelector(`#${identiant}`);
+    console.log(div);
+    
     const elt = div.querySelectorAll('.elt');
     if (elt.length <= 4) { // si le npmbre de qualite dans le card est a 3
+      console.log(elt.length);
+      
       this.renderer.addClass(div, 'btn_disable') // on ajoute la calsse btn_disable a cette element
       const alert = this.renderer.createElement('span') // on cre une elt span
       alert.innerHTML = `3 Qualité  à chaque type <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
@@ -50,6 +54,7 @@ export class TestComponent implements AfterViewInit, OnInit {
       container_quality.querySelectorAll('.elt').forEach((quality: any) => {
         quality.addEventListener('click', () => {
           this.test_nombre_quality(container, id, error)
+          console.log(id);
           const test_myquality = choice.nativeElement.querySelectorAll('span');
           if (!(test_myquality.length >= 12)) {
             const text = quality.innerHTML
