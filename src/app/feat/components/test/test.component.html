@@ -13,20 +13,20 @@
           <mat-card-title> Activity list</mat-card-title>
           <div class="content">
             <div class="content_list" #listquality>
-              <mat-card class="li" id="First" *ngFor="let activity1 of activities1">
-                <mat-card class="elt"> {{ activity1.name | titlecase }} </mat-card>
+              <mat-card class="li" id="First">
+                <mat-card class="elt" *ngFor="let activity1 of activities1"> {{ activity1.name | titlecase }} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Second" *ngFor="let activity3 of activities3">
-                <mat-card class="elt"> {{ activity3.name | titlecase }} </mat-card>
+              <mat-card class="li" id="Second">
+                <mat-card class="elt"  *ngFor="let activity3 of activities3"> {{ activity3.name | titlecase }} </mat-card>
               </mat-card>
             </div>
 
             <div class="content_list" #listquality2>
-              <mat-card class="li" id="Third" *ngFor="let activity2 of activities2">
-                <mat-card class="elt"> {{ activity2.name | titlecase }} </mat-card>
+              <mat-card class="li" id="Third">
+                <mat-card class="elt" *ngFor="let activity2 of activities2"> {{ activity2.name | titlecase }} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Forth" *ngFor="let activity4 of activities4">
-                <mat-card class="elt"> {{ activity4.name | titlecase }} </mat-card>
+              <mat-card class="li" id="Forth">
+                <mat-card class="elt" *ngFor="let activity4 of activities4"> {{ activity4.name | titlecase }} </mat-card>
               </mat-card>
             </div>
           </div>
@@ -37,26 +37,6 @@
         </div>
       </div>
     </mat-tab>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <mat-tab>
       <ng-template mat-tab-label class="title">
         <span class="title">Quality</span>
@@ -67,19 +47,19 @@
           <mat-card-title> Activity list</mat-card-title>
           <div class="content">
             <div class="content_list" #listquality3>
-              <mat-card class="li" id="First1" *ngFor="let quality1 of qualities1">
-                <mat-card class="elt"> {{quality1.name}} </mat-card>
+              <mat-card class="li" id="First1">
+                <mat-card class="elt" *ngFor="let quality1 of qualities1"> {{quality1.name}} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Second1" *ngFor="let quality2 of qualities2">
-                <mat-card class="elt"> {{quality2.name}} </mat-card>
+              <mat-card class="li" id="Second1">
+                <mat-card class="elt"  *ngFor="let quality2 of qualities2"> {{quality2.name}} </mat-card>
               </mat-card>
             </div>
             <div class="content_list" #listquality4>
-              <mat-card class="li" id="Third1" *ngFor="let quality3 of qualities3">
-                <mat-card class="elt"> {{quality3.name}} </mat-card>
+              <mat-card class="li" id="Third1">
+                <mat-card class="elt"  *ngFor="let quality3 of qualities3"> {{quality3.name}} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Forth1" *ngFor="let quality4 of qualities4">
-                <mat-card class="elt"> {{quality4.name}} </mat-card>
+              <mat-card class="li" id="Forth1" >
+                <mat-card class="elt" *ngFor="let quality4 of qualities4"> {{quality4.name}} </mat-card>
               </mat-card>
             </div>
           </div>
@@ -101,19 +81,19 @@
           <mat-card-title> Activity list</mat-card-title>
           <div class="content">
             <div class="content_list" #listquality5>
-              <mat-card class="li" id="First2" *ngFor="let profession1 of professions1">
-                <mat-card class="elt"> {{profession1.name}} </mat-card>
+              <mat-card class="li" id="First2">
+                <mat-card class="elt"  *ngFor="let profession1 of professions1"> {{profession1.name}} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Second2" *ngFor="let profession2 of professions2">
-                <mat-card class="elt"> {{profession2.name}} </mat-card>
+              <mat-card class="li" id="Second2">
+                <mat-card class="elt"  *ngFor="let profession2 of professions2"> {{profession2.name}} </mat-card>
               </mat-card>
             </div>
             <div class="content_list" #listquality6>
-              <mat-card class="li" id="Third2" *ngFor="let profession3 of professions3">
-                <mat-card class="elt"> {{profession3.name}} </mat-card>
+              <mat-card class="li" id="Third2" >
+                <mat-card class="elt" *ngFor="let profession3 of professions3"> {{profession3.name}} </mat-card>
               </mat-card>
-              <mat-card class="li" id="Forth2" *ngFor="let profession4 of professions4">
-                <mat-card class="elt"> {{profession4.name}} </mat-card>
+              <mat-card class="li" id="Forth2" >
+                <mat-card class="elt" *ngFor="let profession4 of professions4"> {{profession4.name}} </mat-card>
               </mat-card>
             </div>
           </div>
