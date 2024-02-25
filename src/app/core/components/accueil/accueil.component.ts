@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
+import { GoogleLoginProvider, SocialAuthService } from "@abacritt/angularx-social-login";
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,13 +11,9 @@ export class AccueilComponent{
 
   constructor(
     private router: Router,
-    private renderer: Renderer2,
-    private el: ElementRef
     ){}
   // =========== Declaration=============
-
-
-  
+  accessToken!: string;
   // ============= Methode ============
 
   signInWithGoogle() {
@@ -25,6 +22,5 @@ export class AccueilComponent{
   login(){
     this.router.navigate(['/osp/login']);
   }
-
 
 }
