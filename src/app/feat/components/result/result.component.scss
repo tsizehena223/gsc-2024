@@ -1,4 +1,4 @@
-$color-primary:#38a7a5; 
+$color-primary:#38a7a5;
 $color-secondary: #59CD97;
 $color-accentiation: #225B7C;
 .result{
@@ -12,10 +12,10 @@ $color-accentiation: #225B7C;
     height: 100vh;
     .welcome_title{
         position: absolute;
-        top: 0;
+        top: 1rem;
         background-color: $color-primary;
         width: 96%;
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 1rem;
         height: 8vh;
         justify-content: center;
         display: flex;
@@ -69,7 +69,7 @@ $color-accentiation: #225B7C;
                 object-fit: fill;
             }
         }
-        
+
     }
     .type_interet{
         background-color: #272727be;
@@ -202,7 +202,7 @@ $color-accentiation: #225B7C;
     to{
         transform: scale(1.2);
     }
-    
+
 }
 @media screen and (min-width:769px) and (max-width: 1023px) {
     .kavio_result{
