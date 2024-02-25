@@ -7,9 +7,5 @@ The Google Solution Challenge is an annual initiative that encourages students t
 - The Audio
 
 ## Installation
-- Prerequisites
-* Angular v16
-* node
-
-- Running
-* ng serve
+- Suppose you have Angular installed on your machine
+- run : ng serve
