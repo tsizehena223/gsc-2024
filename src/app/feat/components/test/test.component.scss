@@ -1,0 +1,197 @@
+$color-primary:#38A7A6;
+$color-secondary: #59CD97;
+$color-accentiation: #225B7C;
+.ngcontent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: $color-primary;
+    mat-tab-group{
+        margin-top: 2rem;
+        width: 100% !important;
+        height: 100%;
+        // background-color: $color-secondary;
+    }
+    .nav_barre{
+        top: 0 !important;
+        position: absolute;
+        z-index: 1;
+        padding: 0;
+        width: 100%;
+        height: 10%;
+        background-color: white;
+    }
+}
+.title{
+    font-size: 1.5rem !important;
+    color: black;
+    font-weight: bold;
+}
+.test1{
+    height: 80vh;
+    width: 90%;
+    margin: 2.5rem auto;
+    border-radius: 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .barre{
+        height: 90%;
+        width: 4px;
+        background-color: $color-primary;
+    }
+    .quality_list{
+        width: 45%;
+        height: 90%;
+        // border: 2px solid $color-primary;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .quality_list{
+        mat-card-title{
+            font-size:1.3rem;
+            font-weight: bold;
+            letter-spacing: .1rem;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .content_list{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+
+        }
+        .li{
+            width: 90%;
+            height: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 0px;
+            border-radius: .2rem;
+            mat-card{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: 4vh;
+                margin-top: .5rem;
+                background-color: $color-secondary;
+                color: #272727;
+                font-weight: bold;
+                border-radius: .2rem;
+                letter-spacing: .2rem;
+                cursor: pointer;
+                transition: 200ms ease-in-out;
+                &:hover{
+                    background-color: $color-primary;
+                    color: white;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+.my_quality{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    mat-card-title{
+        font-size:1.3rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+    }
+}
+.my_qualityClass{
+    margin-top: 1rem;
+    width: 50%;
+    height: 4vh;
+    background-color: $color-primary;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    animation: text 400ms ease-in-out ;
+    transition: 200ms ease-in-out;
+    &:hover{
+        color: white;
+        transform: scale(1.05);
+    }
+}
+@keyframes text {
+    from{
+        transform: translateX(-400px);
+        opacity: 0;
+        background-color: $color-accentiation;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.alert{
+    position: absolute;
+    width: 10%;
+    margin: 0 auto;
+    height: 15vh;
+    text-align: center;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: yellow;
+    padding: 1rem;
+    animation: alert 500ms ease-in-out;
+    box-shadow: 0 0 .8rem $color-accentiation;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+svg{
+    width: 40px;
+    height: 40px;
+    fill: red !important;
+    transition-duration: 200ms;
+}
+@keyframes alert {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.btn_disable{
+    pointer-events: none;
+}
+@media all and (min-width:1023px) {
+    .test1{
+        margin: 2.5rem auto;
+        height: 80vh;
+    }
+}

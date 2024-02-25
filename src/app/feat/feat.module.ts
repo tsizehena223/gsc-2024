@@ -4,14 +4,16 @@ import { FeatRoutingModule } from './feat-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './components/home/home.component';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { environement } from 'src/environements/environement';
-
+import { TestComponent } from './components/test/test.component';
+import { ResultComponent } from './components/result/result.component';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 @NgModule({
   declarations: [
     LoginComponent,
-    HomeComponent
+    TestComponent,
+    ResultComponent,
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { environement } from 'src/environements/environement';
     SharedModule,
     ReactiveFormsModule,
     SocialLoginModule,
-    GoogleSigninButtonModule
+    GoogleSigninButtonModule,
+    NgxTypedJsModule
 
   ],
   providers: [

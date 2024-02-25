@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { UniversityService } from 'src/app/services/university.service';
 
 @Component({
   selector: 'app-university',
@@ -9,17 +8,4 @@ import { UniversityService } from 'src/app/services/university.service';
 export class UniversityComponent {
   title = 'University';
 
-  constructor(private service: UniversityService) { }
-
-  universities: any = [];
-
-  refreshUniversities() {
-    this.service.getUniversities().subscribe((res) => {
-      this.universities = res;
-    })
-  }
-
-  ngOnInit() {
-    this.refreshUniversities();
-  }
 }

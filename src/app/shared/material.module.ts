@@ -17,6 +17,8 @@ import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
 declarations:[],
+imports:[
+],
 exports:[
     CommonModule,
     MatCardModule,
@@ -33,8 +35,9 @@ exports:[
     MatButtonModule,
     MatMenuModule,
     MatSlideToggleModule,
-    MatTabsModule
+    MatTabsModule,
 ]
+
 })
 export class MaterialModule{
 

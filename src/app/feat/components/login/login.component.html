@@ -6,20 +6,14 @@
     <title>login | page</title>
 </head>
 <body>
-   <div class="container">
-            <div class="content1">  
-                <mat-card-title>
-                    <h2 class="title_login">
-                         Orientation Scolaire et Professionnel
-                    </h2>
-                 </mat-card-title>
-                <div class="input_container">
-                    <mat-card-title>
-                        <h1>
-                            Sign In with ...
-                        </h1>
-                    </mat-card-title>
-    
+    <div class="item">
+        <div class="content1">  
+            <div class="input_container">
+                <div class="image"></div>
+                    <h1>
+                        Sign In with
+                    </h1>
+                <div class="form">
                     <div class="fb" (click)="signInWithFB()">
                       <span class="logo_fb">
                         <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -29,21 +23,30 @@
                       <span class="title_fb"> Sign in with facebook </span>
                     </div>
                     <div class="foot">
-                        <div id="social_media"></div>
+                        <!-- <div id="social_media"></div> -->
+                        <div class="google">
+                            <!-- <span class="logo_fb">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-google" viewBox="0 0 16 16">
+                                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                                </svg>
+                              </span> -->
+                            <span class="title_fb" id="social_media"></span>
+                        </div>
                    </div>
                 </div>
-                
-        </div>
-        <div class="content2">
-             <mat-card-title>
-                   <h2>
-                        Orientation Scolaire et Professionnel
-                   </h2>
-                </mat-card-title>
-                <div class="img">
-                    <img src="../../../../assets/image/Computer login-amico.svg" alt="login image">
-                </div>
-        </div>
-   </div>
+            </div>
+            
+    </div>
+    <div class="content2">
+         <!-- <mat-card-title>
+               <h2>
+                Academic and Professional Orientation
+               </h2>
+            </mat-card-title> -->
+            <div class="img">
+                <img src="../../../../assets/image/Computer login-amico.svg" alt="login image">
+            </div>
+    </div>
+</div>
 </body>
 </html>

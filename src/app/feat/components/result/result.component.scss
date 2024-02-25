@@ -1,0 +1,220 @@
+$color-primary:#38a7a5;
+$color-secondary: #59CD97;
+$color-accentiation: #225B7C;
+.result{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    .welcome_title{
+        position: absolute;
+        top: 1rem;
+        background-color: $color-primary;
+        width: 96%;
+        border-radius: 1rem;
+        height: 8vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        .text_typing{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            span{
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}
+}
+.container_result{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    .kavio_result{
+        padding: 2rem ;
+        border-radius: 2rem;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.2);
+        .image{
+            border-radius: 1rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            background-color: #272727;
+            background-image: url('../../../../assets/image/realiste.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                width: 100%;
+                border-radius: 1rem;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+    }
+    .type_interet{
+        background-color: #272727be;
+        height: max-content;
+        width: 100%;
+        padding: 2rem;
+        border-radius:  0 0 1rem 1rem;
+        h3{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .realiste{
+        color: white;
+        font-size: 1rem;
+    }
+    .university_proposition{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        .es{
+            box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 1rem;
+            padding: 1rem;
+            .about{
+                width: 40%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 4px solid $color-primary;
+            }
+            .btn{
+                button{
+                    background-color: $color-primary;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+            .img_es{
+                width: 30%;
+                height: 100%;
+                padding: 1rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1rem;
+                }
+            }
+            }
+        }
+}
+@media screen and (max-width: 768px) {
+    .result{
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        flex-direction: column;
+        .welcome_title{
+            .text_typing{
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .container_result{
+        margin: 0 auto;
+        justify-content: space-around !important;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        .kavio_result{
+            margin-top: 2rem !important;
+            width: 100%;
+            height: 150vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .university_proposition{
+            margin-top: -5rem;
+            width: 100%;
+            height: 45%;
+            .es{
+                .about{
+                    padding: 1rem;
+                    h3{
+                        font-size: .8rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profession{
+    margin-top: 0;
+    border-radius: 2rem;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #225b7cc8;
+    height: 250px;
+    width: 250px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    color: white;
+    animation: prof 500ms ease-in-out;
+}
+@keyframes prof {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.2);
+    }
+
+}
+@media screen and (min-width:769px) and (max-width: 1023px) {
+    .kavio_result{
+        padding: 1rem !important;
+        .image{
+            height: 100% !important;
+        }
+       .type_interet{
+        padding: .5rem;
+        .realiste{
+            font-size: .9rem;
+        }
+       }
+    }
+}
