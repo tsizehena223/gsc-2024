@@ -5,5 +5,11 @@ The Google Solution Challenge is an annual initiative that encourages students t
 ## Members
 - Tsizehena
 - The Audio
-- Teloxis
-- Athanase
+
+## Installation
+- Prerequisites
+-- Angular v16
+-- node
+
+- Running
+- ng serve
