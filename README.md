@@ -8,4 +8,6 @@ The Google Solution Challenge is an annual initiative that encourages students t
 
 ## Installation
 - Suppose you have Angular installed on your machine
+- Clone this project
+- npm i
 - run : ng serve
