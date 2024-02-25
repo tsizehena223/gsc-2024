@@ -50,7 +50,7 @@ envId = environement.client_id
       //enregistrer le token
       sessionStorage.setItem('loggedInUser', JSON.stringify(paylod));
       //redirection vers l'accueil
-      this.router.navigate(['/']);    
+      this.router.navigate(['/osp/test']);    
       return paylod;
        
     }
@@ -58,7 +58,7 @@ envId = environement.client_id
 
   async signInWithFB(): Promise<void> {
     await this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
-    this.router.navigate(['/']);
+    this.router.navigate(['/osp/test']);
 
   }
     ngOnInit(): void {
